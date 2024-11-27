@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        main {
+            border: 1px solid black;
+            background-color: rgba(0, 0, 255, 0.301);
+            width: 200px;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.367);
+            margin: auto;
+        }
+
+        h1 {
+            font: normal 2.5rem lucida;
+            margin: 0px;
+        }
+
+        input {
+            box-sizing: border-box;
+        }
+
+        #display {
+            background-color: white;
+            color: black;
+            text-align: right;
+            width: 200px;
+            height: 30px;
+            margin: 10px 0px;
+            border-radius: 3px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .buttonValue {
+            width: 64px;
+            font: 600 1rem Arial;
+            margin: 5px 0px;
+        }
+        
+        .buttonValue:active {
+            background-color: grey;
+            color: white;
+            transition: 0.1s;
+        }
+
+        .buttonOp {
+            width: 47px;
+            font: 600 1rem Arial;
+            margin: 1px 0px;
+        }
+
+        .buttonOp:active {
+            background-color: grey;
+            color: white;
+            transition: 0.1s;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Calculadora</h1>
+        <form id="calculadora-form">
+            <input class="buttonValue" type="text" name="display" id="display" placeholder="0" disabled>
+
+            <div>
+                <button class="buttonOp" data-op="+" id="soma">+</button>
+                <button class="buttonOp" data-op="-" id="subtracao">-</button>
+                <button class="buttonOp" data-op="*" id="multiplicacao">X</button>
+                <button class="buttonOp" data-op="/" id="divisao">/</button>
+            </div>
+
+            <button class="buttonValue" data-value="1">1</button>
+            <button class="buttonValue" data-value="2">2</button>
+            <button class="buttonValue" data-value="3">3</button>
+            <button class="buttonValue" data-value="4">4</button>
+            <button class="buttonValue" data-value="5">5</button>
+            <button class="buttonValue" data-value="6">6</button>
+            <button class="buttonValue" data-value="7">7</button>
+            <button class="buttonValue" data-value="8">8</button>
+            <button class="buttonValue" data-value="9">9</button>
+            <button class="buttonValue" data-op="C">C</button>
+            <button class="buttonValue" data-value="0">0</button>
+            <button class="buttonValue" data-op="=" type="button">=</button>
+        </form>
+    </main>
+    <script src="calc.js"></script>
+</body>
+</html>
