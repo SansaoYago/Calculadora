@@ -45,7 +45,7 @@ function calcular() {
     resultadoAnterior = resultado;
     valores = [];
     currentValue = ''; // Limpa currentValue
-    document.getElementById('display').value = resultado;
+    document.getElementById('display').value = resultado.toFixed(2);
   } catch (erro) {
     resultadoAnterior = 0; // Reset resultadoAnterior
     document.getElementById('display').value = 'Erro';
