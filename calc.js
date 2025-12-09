@@ -38,7 +38,6 @@ function calcular() {
     '/': (a, b) => a / b
   };
 
-
   try {
     let resultado;
     resultado = operacoes[operation](valores[0], valores[1]);
@@ -51,7 +50,6 @@ function calcular() {
     document.getElementById('display').value = 'Erro';
   }
 }
-
 
 function limpar() {
   currentValue = '';
