@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+
+        body {
+            padding-top: 50px;
+            background-color: aquamarine;
+        }
+
+        main {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.914);
+            width: fit-content;
+            padding: 15px;
+            margin: auto;
+            border: 2px solid rgba(0, 0, 0, 0.375);
+            border-radius: 10px;
+        }
+
+        .display {
+            border: 1px solid black;
+            text-align: right;
+            padding: 3px;
+        }
+
+        .operacao {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 5px;
+            margin: 10px 0px;
+        }
+
+        .operacao input {
+            flex: 1 0 auto;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 0, 0, 0.495);
+        }
+
+        .corpo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+        }
+
+        input[type="button"] {
+            padding: 3px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>CALCULADORA</h1>
+        <div class="display">0</div>
+        <div class="botoes">
+            <span class="operacao">
+                <input type="button" data-op="+" value="+">
+                <input type="button" data-op="-" value="-">
+                <input type="button" data-op="*" value="X">
+                <input type="button" data-op="/" value="/">
+            </span>
+            <span class="corpo">
+                <input type="button" value="1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="4">
+                <input type="button" value="5">
+                <input type="button" value="6">
+                <input type="button" value="7">
+                <input type="button" value="8">
+                <input type="button" value="9">
+                <input type="button" value="C">
+                <input type="button" value="0">
+                <input type="button" value="=">
+            </span>
+        </div>
+    </main>
+    <script>
+        const botoes = document.getElementsByClassName("botoes")
+
+    </script>
+</body>
+
+</html>
